@@ -1,0 +1,37 @@
+#main-container {
+	background-color: black;
+	height: 125px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px;
+}
+
+#nav-buttons-layout {
+	width: 1400px;
+	height: 125px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#nav-logo {
+	width: 75px;
+	height: 75px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#nav-button {
+	width: 200px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#nav-button:hover {
+	background-color: rgba(255,255,255, 0.7);
+}
