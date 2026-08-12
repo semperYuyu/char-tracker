@@ -17,16 +17,15 @@ function NavBar() {
 				</div>
 
 				<div id="nav-buttons-layout">
+
 					<NavButton to="/characters" name="Browse"/> 
-
-
 					
-
 					{!user.logged_in && (<> 
 								<NavButton to="/login" name="Login"/>
 								<NavButton to="/signup" name="Sign Up"/>
 						</>) || (<> 
 							<NavButton to={`/profile/${user.user_id}`} name="Profile"/>
+							<NavButton to={`/projects`} name="Projects"/>
 						</>)}
 					
 				</div>
