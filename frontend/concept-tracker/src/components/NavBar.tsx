@@ -5,7 +5,7 @@ import "../styles/NavBar.css";
 function NavBar() {
 
 	const user = {
-		logged_in: false,
+		logged_in: true,
 		user_id: 1234,
 	}
 
@@ -18,15 +18,19 @@ function NavBar() {
 
 				<div id="nav-buttons-layout">
 
-					<NavButton to="/characters" name="Browse"/> 
+					<NavButton to="/characters" name="Discover"/> 
 					
 					{!user.logged_in && (<> 
+
 								<NavButton to="/login" name="Login"/>
 								<NavButton to="/signup" name="Sign Up"/>
-						</>) || (<> 
-							<NavButton to={`/profile/${user.user_id}`} name="Profile"/>
-							<NavButton to={`/projects`} name="Projects"/>
-						</>)}
+
+								</>) || (<> 
+
+								<NavButton to={`/projects/${user.user_id}`} name="Projects"/>
+								<NavButton to={`/profile/${user.user_id}`} name="Profile"/>
+
+								</>)}
 					
 				</div>
 
