@@ -18,7 +18,7 @@ function NavBar() {
 
 				<div id="nav-buttons-layout">
 
-					<NavButton to="/characters" name="Discover"/> 
+					<NavButton to="/discover" name="Discover"/> 
 					
 					{!user.logged_in && (<> 
 

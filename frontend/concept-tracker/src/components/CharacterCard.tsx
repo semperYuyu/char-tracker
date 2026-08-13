@@ -10,7 +10,7 @@ function CharacterCard({ name, sound, img }: CharacterCardTypes) {
 
 
 	return(<> 
-			<div id={"character-card-container"}> 
+			<div id={"character-card-container"} onClick={()=> console.log('what the')}> 
 				<img id={"character-portrait"} src={img || "/question_mark.png"} alt={img || "where picture"}/>
 
 				<div id={"character-info"}>

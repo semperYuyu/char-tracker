@@ -8,11 +8,15 @@ type NavButtonTypes = {
 
 function NavButton({ to, name }: NavButtonTypes) {
 
-	return(<div id={"nav-button"} className={"cursor-pointer"}> 
+	return(
+		<>
 			<Link to={to}>
-				<p className={"text-white text-2xl"}> {name} </p>
+				<div id={"nav-button"} className={"cursor-pointer"}> 
+					<p className={"text-white text-2xl"}> {name} </p>
+				</div>
 			</Link>
-		</div>)
+		</>
+		)
 }
 
 export default NavButton;
